@@ -36,7 +36,7 @@ li{
 }
 img{
     width: 20%;
-    position:relative;
+/*    position:relative;*/
     
 }
 .textimage1 {
@@ -185,32 +185,36 @@ section p img{
 *************************************************/
 footer{
         
-    padding:1rem 2rem;
+    padding:1rem 2rem;*/
     font-size: 30px;
     color: white;
+/*
+    
     float: left;
-    text-align: center;
-    margin-right: 20px;
+/*    text-align: center;*/
+/*    margin-right: 20px;*/
+/*
     padding: 5px 10px;
+*/
+
     padding-left: 10%; 
     list-style: none;
-    border-top:solid 10px #05f ;
+ /*
+
+}
+.foot{
+    
 }
 
-.foot{
-    display: flex;
-    width: 100%;
-    flex-direction: column-reverse;
-}
 
 .foot nav{
     flex: 1;
-    width: 50%;
+    width: 100%;
     padding: 1rem 2rem;
     font-size:20px;
     float:inherit;
     margin-right: 10px;
-    padding-left: 5%;
+    padding-left: 5%;*/
     list-style:none;
     
 }
@@ -220,6 +224,7 @@ footer{
 }
 .foot dl{
     float: left;
+    padding-left: 14%;
 }
 .foot dt{
     font-size: 20px;
@@ -248,20 +253,25 @@ footer{
     font-size: 12px;
     
 }
+form-box{
+    
+}
 /*************************************************
             MEDIA QUERIES for layout
 *************************************************/
 @media (max-width: 600px){
-    header{
-           border-top: solid #0dff00;
-    }
+   
     
-    foot{
-        flex-direction: column-reverse;
-    }
+    
+    .foot{
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+}
     
     .main-link{
-        display: block;   
+        display: block;
+        padding-left: 10%;
     }
     story-image{
         display: block;
@@ -280,9 +290,7 @@ footer{
     
 }
 @media (min-width: 600px) and (max-width:1000px){
-    heder{
-        border-top: solid #ff00e1;
-    }
+   
    
     .first{
         display: block;
@@ -314,11 +322,27 @@ footer{
     section p{
         font-size: 17px;
     }
+    .foot{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+}
 }
 @media (min-width: >1000px){
     header{
         border-top: solid #06f;
     }
-    
+    .foot{
+        display: flex;
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+/*    flex-direction: column-reverse;*/
+        }
+    footer{
+        
+    }
         
 }
